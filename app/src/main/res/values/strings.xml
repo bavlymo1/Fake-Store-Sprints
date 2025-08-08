@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Fake Store Sprints</string>
+    <string name="title_activity_product_list_screen">ProductListScreen</string>
+</resources>
