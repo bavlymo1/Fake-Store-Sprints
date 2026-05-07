@@ -4,7 +4,7 @@
 ![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-1EDA8B?style=flat-square&logo=android&logoColor=white)
 ![Architecture](https://img.shields.io/badge/Architecture-MVVM%20%2B%20Clean-69B4F0?style=flat-square)
 
-An Android e-commerce app built with Jetpack Compose, MVVM, and Retrofit. Consumes the [Fake Store API](https://fakestoreapi.com/) to display products, categories, and product details across 6+ Material Design 3 screens. Demonstrates professional Android architecture with ~80%+ ViewModel unit test coverage.
+An Android e-commerce app built with Jetpack Compose, MVVM, and Retrofit. Consumes the [Fake Store API](https://fakestoreapi.com/) to display products, categories, and product details across 6+ Material Design 3 screens.
 
 ---
 
@@ -40,7 +40,7 @@ An Android e-commerce app built with Jetpack Compose, MVVM, and Retrofit. Consum
 
 ## Architecture
 
-```
+```text
 com.example.fakestore
 ├── core/
 │   ├── network/         # Retrofit client, interceptors
@@ -53,62 +53,61 @@ com.example.fakestore
 │   ├── repository/      # Repository interfaces
 │   └── usecase/         # Use cases
 └── presentation/
-    ├── products/         # Product list + detail screens
-        ├── cart/             # Cart screen
-            └── auth/             # Login / register screens
-            ```
+    ├── products/        # Product list + detail screens
+    ├── cart/            # Cart screen
+    └── auth/            # Login / register screens
+```
 
-            ---
+---
 
-            ## Getting Started
+## Getting Started
 
-            ### Prerequisites
+### Prerequisites
 
-            - Android Studio Hedgehog (2023.1.1) or newer
-            - JDK 17+
-            - Android SDK 35+
+- Android Studio Hedgehog (2023.1.1) or newer
+- JDK 17+
+- Android SDK 35+
 
-            ### Steps
+### Steps
 
-            1. Clone the repository
-               ```bash
-                  git clone https://github.com/bavlymo1/Fake-Store-Sprints.git
-                     cd Fake-Store-Sprints
-                        ```
+1. Clone the repository
 
-                        2. Open in Android Studio
+   ```bash
+   git clone https://github.com/bavlymo1/Fake-Store-Sprints.git
+   cd Fake-Store-Sprints
+   ```
 
-                        3. Sync Gradle
+2. Open the project in Android Studio
+3. Sync Gradle
+4. Run on an emulator or physical device
 
-                        4. Run on an emulator or physical device
+> Uses the public [Fake Store API](https://fakestoreapi.com/) — no API key required.
 
-                        > Uses the public [Fake Store API](https://fakestoreapi.com/) — no API key required.
+---
 
-                        ---
+## Running Tests
 
-                        ## Running Tests
+```bash
+./gradlew test
+```
 
-                        ```bash
-                        ./gradlew test
-                        ```
+ViewModel tests are in `app/src/test/`.
 
-                        ViewModel tests are in `app/src/test/`.
+---
 
-                        ---
+## Contributing
 
-                        ## Contributing
+1. Fork this repository
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Commit: `git commit -m "feat: add some feature"`
+4. Open a Pull Request
 
-                        1. Fork this repository
-                        2. Create a feature branch: `git checkout -b feature/your-feature`
-                        3. Commit: `git commit -m 'feat: add some feature'`
-                        4. Open a Pull Request
+---
 
-                        ---
+## License
 
-                        ## License
+This project is open source for learning and demonstration purposes.
 
-                        This project is open source for learning and demonstration purposes.
+---
 
-                        ---
-
-                        Made by [Bahy Mohy](https://github.com/bavlymo1) | [LinkedIn](https://www.linkedin.com/in/bahy-mohy-0b5ab6407/)
+Made by [Bahy Mohy](https://github.com/bavlymo1) | [LinkedIn](https://www.linkedin.com/in/bahy-mohy-0b5ab6407/)
